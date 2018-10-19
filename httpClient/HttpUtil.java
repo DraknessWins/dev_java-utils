@@ -1,5 +1,3 @@
-package org.titan.bumblebee.common.util.authorization;
-
 import org.apache.http.*;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
