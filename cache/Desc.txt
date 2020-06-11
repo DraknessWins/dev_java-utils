@@ -1,4 +1,4 @@
-»ùÓÚHibernate 5 , spymemcached ÊµÏÖµÄ memcache ¶ş¼¶»º´æ
+åŸºäºHibernate 5 , spymemcached å®ç°çš„ memcache äºŒçº§ç¼“å­˜
 
         <dependency>
             <groupId>com.google.code.simple-spring-memcached</groupId>
@@ -20,9 +20,10 @@
 #            use_query_cache: true
 #            factory_class: com.zhangwen.cache.memcache.MemcachedRegionFactory
 #        memcached:
-#          username: m-bp1345b43f0d5584
-#          password: HNUGlqd7
-#          memcacheClientFactory: com.zhangwen.cache.memcache.spymemcached.SpyMemcacheClientFactory      #Ö¸¶¨memcache Client¹¤³§Ìá¹©Àà£¬Èç¹ûÃ»ÓĞÖ¸¶¨£¬ÔòÄ¬ÈÏÖµÎªConfigÀàÖĞµÄÖ¸¶¨Àà
-#          cacheTimeSeconds: 300                                                                         #»º´æÊ±¼ä£¬µ¥Î»/Ãë
-          #dogpilePrevention: false                                                                     #Ô¤·ÀÒò×ÓÉèÖÃ£¬»º´æÊ±¼ä»áÔÚ»ù´¡ÉÏ½øĞĞ±¶ÊıÔö³¤£¬Ä¬ÈÏ¿ªÆô£¬±¶ÊıÎª2±¶
+#          servers:
+#          username: 
+#          password: 
+#          memcacheClientFactory: com.zhangwen.cache.memcache.spymemcached.SpyMemcacheClientFactory      #æŒ‡å®šmemcache Clientå·¥å‚æä¾›ç±»ï¼Œå¦‚æœæ²¡æœ‰æŒ‡å®šï¼Œåˆ™é»˜è®¤å€¼ä¸ºConfigç±»ä¸­çš„æŒ‡å®šç±»
+#          cacheTimeSeconds: 300                                                                         #ç¼“å­˜æ—¶é—´ï¼Œå•ä½/ç§’
+          #dogpilePrevention: false                                                                     #é¢„é˜²å› å­è®¾ç½®ï¼Œç¼“å­˜æ—¶é—´ä¼šåœ¨åŸºç¡€ä¸Šè¿›è¡Œå€æ•°å¢é•¿ï¼Œé»˜è®¤å¼€å¯ï¼Œå€æ•°ä¸º2å€
           #  expirationFactor: 1
