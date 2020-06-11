@@ -1,0 +1,28 @@
+基于Hibernate 5 , spymemcached 实现的 memcache 二级缓存
+
+        <dependency>
+            <groupId>com.google.code.simple-spring-memcached</groupId>
+            <artifactId>spymemcached</artifactId>
+            <version>2.8.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.googlecode.xmemcached</groupId>
+            <artifactId>xmemcached</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
+
+#      hibernate:
+#        cache:
+#          region:
+#            use_second_level_cache: true
+#            use_query_cache: true
+#            factory_class: com.zhangwen.cache.memcache.MemcachedRegionFactory
+#        memcached:
+#          username: m-bp1345b43f0d5584
+#          password: HNUGlqd7
+#          memcacheClientFactory: com.zhangwen.cache.memcache.spymemcached.SpyMemcacheClientFactory      #指定memcache Client工厂提供类，如果没有指定，则默认值为Config类中的指定类
+#          cacheTimeSeconds: 300                                                                         #缓存时间，单位/秒
+          #dogpilePrevention: false                                                                     #预防因子设置，缓存时间会在基础上进行倍数增长，默认开启，倍数为2倍
+          #  expirationFactor: 1
